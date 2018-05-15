@@ -7,5 +7,5 @@ angular
       update: {
         method: 'PUT'
       }
-    })
-  })
+    });
+  });

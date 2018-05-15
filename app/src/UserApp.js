@@ -1,9 +1,8 @@
-var userApp = angular.module('UserApp', ['ngRoute', 'ngResource'])
+var userApp = angular.module('UserApp', ['ngRoute', 'ngResource']);
 
 angular.module('UserApp')
-
   .config(['$routeProvider',
-    function config ($routeProvider) {
+    function config($routeProvider) {
       $routeProvider
         .when('/users', {
           templateUrl: 'src/UserList/UserList.html',
@@ -23,6 +22,6 @@ angular.module('UserApp')
         })
         .otherwise({
           redirectTo: '/'
-        })
+        });
     }
-  ])
+  ]);
